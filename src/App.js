@@ -13,8 +13,9 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/Rating" component={Rating} />
-          <Route path="/DownloadCount" component={DownloadCount} />
+          <Route path="/movie" component={Home} />
+          <Route path="/rating" component={Rating} />
+          <Route path="/downloadcount" component={DownloadCount} />
           <Route path="/movie/:id" component={Detail} />
         </Switch>
       </div>
