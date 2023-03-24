@@ -2,20 +2,22 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Detail from "./routes/Detail";
 import Home from "./routes/Home";
 
+import Rating from "./routes/Rating";
+import DownloadCount from "./routes/DownloadCount";
+import Nav from "./Nav";
+
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/hello">
-          <h1>Hello</h1>
-        </Route>
-        <Route path="/movie/:id">
-          <Detail />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/Rating" component={Rating} />
+          <Route path="/DownloadCount" component={DownloadCount} />
+          <Route path="/movie/:id" component={Detail} />
+        </Switch>
+      </div>
     </Router>
   );
 }
