@@ -43,3 +43,15 @@
     text-decoration: none;
   }
   
+  @media screen and (max-width: 1090px) {
+    .App .navbar {
+      font-size: 15px;
+    }
+  
+    .App .navbar .logo {
+      font-size: 20px;
+    }
+    .App .navbar .nav-links>a{
+      margin-right: 10px;
+    }
+  }
