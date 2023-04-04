@@ -8,3 +8,4 @@
 - propTypes로 타입검사/유효성검사/필수값 설정
 - 영화 제목 클릭시 useParams를 이용해서 id값에 맞게 페이지로 이동
 - useState, useEffect를 이용해서 state 관리
+- build로 페이지 배포
